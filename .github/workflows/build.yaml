@@ -31,7 +31,6 @@ jobs:
           context: ./linkwarden
           file: ./linkwarden/Dockerfile
           platforms: linux/amd64,linux/arm64
-          build-args:
-            - NEXT_PUBLIC_EMAIL_PROVIDER=true
+          build-args: NEXT_PUBLIC_EMAIL_PROVIDER=true
           push: true
           tags: ghcr.io/apocalypsor/linkwarden:latest
